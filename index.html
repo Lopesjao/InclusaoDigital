@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital - Alfabeto Interativo</title>
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 120px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            max-height: 100px;
+            object-fit: cover;
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position:relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto de Inclusão Digital - Alfabeto Interativo</h1>
+        <p>Clique nas letras do alfabeto para ouvir o som correspondente!</p>
+    </header>
+
+    <div class="container">
+        <!-- Cartões para cada letra do alfabeto -->
+        <div class="card" onclick="playSound('a')">
+            <img src="https://via.placeholder.com/150?text=A" alt="A">
+            <div class="description">A</div>
+        </div>
+        <div class="card" onclick="playSound('b')">
+            <img src="https://via.placeholder.com/150?text=B" alt="B">
+            <div class="description">B</div>
+        </div>
+        <div class="card" onclick="playSound('c')">
+            <img src="https://via.placeholder.com/150?text=C" alt="C">
+            <div class="description">C</div>
+        </div>
+        <div class="card" onclick="playSound('d')">
+            <img src="https://via.placeholder.com/150?text=D" alt="D">
+            <div class="description">D</div>
+        </div>
+        <div class="card" onclick="playSound('e')">
+            <img src="https://via.placeholder.com/150?text=E" alt="E">
+            <div class="description">E</div>
+        </div>
+        <div class="card" onclick="playSound('f')">
+            <img src="https://via.placeholder.com/150?text=F" alt="F">
+            <div class="description">F</div>
+        </div>
+        <div class="card" onclick="playSound('g')">
+            <img src="https://via.placeholder.com/150?text=G" alt="G">
+            <div class="description">G</div>
+        </div>
+        <div class="card" onclick="playSound('h')">
+            <img src="https://via.placeholder.com/150?text=H" alt="H">
+            <div class="description">H</div>
+        </div>
+        <div class="card" onclick="playSound('i')">
+            <img src="https://via.placeholder.com/150?text=I" alt="I">
+            <div class="description">I</div>
+        </div>
+        <div class="card" onclick="playSound('j')">
+            <img src="https://via.placeholder.com/150?text=J" alt="J">
+            <div class="description">J</div>
+        </div>
+        <div class="card" onclick="playSound('k')">
+            <img src="https://via.placeholder.com/150?text=K" alt="K">
+            <div class="description">K</div>
+        </div>
+        <div class="card" onclick="playSound('l')">
+            <img src="https://via.placeholder.com/150?text=L" alt="L">
+            <div class="description">L</div>
+        </div>
+        <div class="card" onclick="playSound('m')">
+            <img src="https://via.placeholder.com/150?text=M" alt="M">
+            <div class="description">M</div>
+        </div>
+        <div class="card" onclick="playSound('n')">
+            <img src="https://via.placeholder.com/150?text=N" alt="N">
+            <div class="description">N</div>
+        </div>
+        <div class="card" onclick="playSound('o')">
+            <img src="https://via.placeholder.com/150?text=O" alt="O">
+            <div class="description">O</div>
+        </div>
+        <div class="card" onclick="playSound('p')">
+            <img src="https://via.placeholder.com/150?text=P" alt="P">
+            <div class="description">P</div>
+        </div>
+        <div class="card" onclick="playSound('q')">
+            <img src="https://via.placeholder.com/150?text=Q" alt="Q">
+            <div class="description">Q</div>
+        </div>
+        <div class="card" onclick="playSound('r')">
+            <img src="https://via.placeholder.com/150?text=R" alt="R">
+            <div class="description">R</div>
+        </div>
+        <div class="card" onclick="playSound('s')">
+            <img src="https://via.placeholder.com/150?text=S" alt="S">
+            <div class="description">S</div>
+        </div>
+        <div class="card" onclick="playSound('t')">
+            <img src="https://via.placeholder.com/150?text=T" alt="T">
+            <div class="description">T</div>
+        </div>
+        <div class="card" onclick="playSound('u')">
+            <img src="https://via.placeholder.com/150?text=U" alt="U">
+            <div class="description">U</div>
+        </div>
+        <div class="card" onclick="playSound('v')">
+            <img src="https://via.placeholder.com/150?text=V" alt="V">
+            <div class="description">V</div>
+        </div>
+        <div class="card" onclick="playSound('w')">
+            <img src="https://via.placeholder.com/150?text=W" alt="W">
+            <div class="description">W</div>
+        </div>
+        <div class="card" onclick="playSound('x')">
+            <img src="https://via.placeholder.com/150?text=X" alt="X">
+            <div class="description">X</div>
+        </div>
+        <div class="card" onclick="playSound('y')">
+            <img src="https://via.placeholder.com/150?text=Y" alt="Y">
+            <div class="description">Y</div>
+        </div>
+        <div class="card" onclick="playSound('z')">
+            <img src="https://via.placeholder.com/150?text=Z" alt="Z">
+            <div class="description">Z</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Turma ADS 18 - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Função para reproduzir o som de acordo com a letra clicada
+        function playSound(letter) {
+            const sounds = {
+                a: "https://www.soundjay.com/button/beep-07.wav", 
+                b: "https://www.soundjay.com/button/beep-06.wav",
+                c: "https://www.soundjay.com/button/beep-05.wav",
+                d: "https://www.soundjay.com/button/beep-08.wav",
+                e: "https://www.soundjay.com/button/beep-09.wav",
+                f: "https://www.soundjay.com/button/beep-04.wav",
+                g: "https://www.soundjay.com/button/beep-06.wav",
+                h: "https://www.soundjay.com/button/beep-02.wav",
+                i: "https://www.soundjay.com/button/beep-03.wav",
+                j: "https://www.soundjay.com/button/beep-01.wav",
+                k: "https://www.soundjay.com/button/beep-07.wav",
+                l: "https://www.soundjay.com/button/beep-05.wav",
+                m: "https://www.soundjay.com/button/beep-06.wav",
+                n: "https://www.soundjay.com/button/beep-02.wav",
+                o: "https://www.soundjay.com/button/beep-09.wav",
+                p: "https://www.soundjay.com/button/beep-03.wav",
+                q: "https://www.soundjay.com/button/beep-08.wav",
+                r: "https://www.soundjay.com/button/beep-01.wav",
+                s: "https://www.soundjay.com/button/beep-07.wav",
+                t: "https://www.soundjay.com/button/beep-06.wav",
+                u: "https://www.soundjay.com/button/beep-05.wav",
+                v: "https://www.soundjay.com/button/beep-04.wav",
+                w: "https://www.soundjay.com/button/beep-02.wav",
+                x: "https://www.soundjay.com/button/beep-08.wav",
+                y: "https://www.soundjay.com/button/beep-01.wav",
+                z: "https://www.soundjay.com/button/beep-03.wav"
+            };
+
+            const audio = new Audio(sounds[letter]);
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
